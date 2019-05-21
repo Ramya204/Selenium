@@ -2,6 +2,7 @@ package selenium.maven.selFrameworks;
 
 import java.util.Date;
 
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -10,6 +11,7 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.WebDriver;
+//sort by ascending order
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class FacebookTest extends BaseClass{
 public static WebDriver driver=null;
