@@ -10,7 +10,7 @@ public class BaseClass {
 	public static WebDriver driver=null;
 	
 public static WebDriver launchBrowser(String url){
-	System.setProperty("webdriver.chrome.driver", "/Selenium/SeleniumTest/driver/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "C:/Selenium/chromedriver/chromedriver.exe");
 	driver=new ChromeDriver();
 	driver.get(url);
 	driver.manage().window().maximize();

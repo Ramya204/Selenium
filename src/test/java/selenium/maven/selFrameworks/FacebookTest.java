@@ -11,19 +11,20 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.WebDriver;
+
 //sort by ascending order
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class FacebookTest extends BaseClass{
 public static WebDriver driver=null;
 Locators loc=new Locators();
+
 @ BeforeClass
 public static void beforeClass(){
-driver=BaseClass.launchBrowser("https://www.facebook.com/");
+driver=launchBrowser("https://www.facebook.com/");
 }
 @AfterClass
 public static void afterClass(){
-	BaseClass.closePage(driver);
-	
+	closePage(driver);
 }
 
 @Before
@@ -58,6 +59,7 @@ public void logic(){
 }*/
 @Test
 public void aLoginDetails(){
+	
 	inputData(loc.getUsername(), "Ramza12345");
 	inputData(loc.getPassword(),"12345");
 }
